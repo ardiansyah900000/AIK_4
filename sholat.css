@@ -1,0 +1,114 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: transparent !important;
+  color: white;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+h2 {
+  color: white;
+}
+
+/* navbar */
+.navbar {
+  background-color: transparent;
+  border-bottom: white solid 0.2px;
+}
+.container a {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.container .btn {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* hero */
+.hero {
+  background: url(image/bg-home.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #ccccff;
+  padding: 15rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero p {
+  font-weight: 400;
+}
+
+/* menu panduan */
+.py-5 {
+  background: url(image/bg-panduan.jpg) center/cover no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+}
+.py-5 .container {
+  padding-top: 3rem;
+}
+
+.py-5 .container img {
+  width: 30%;
+  height: 30%;
+}
+.gerakan-sholat {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+.gerakan-sholat img {
+  max-width: 300px;
+}
+.arabic {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+.latin,
+.arti {
+  font-style: italic;
+}
+
+/* footer */
+footer {
+  background-color: rgb(30, 30, 106);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+}
